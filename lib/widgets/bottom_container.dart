@@ -1,4 +1,5 @@
 import 'package:alarm_app_animation/widgets/pick_mission.dart';
+import 'package:alarm_app_animation/widgets/sleep_history.dart';
 import 'package:alarm_app_animation/widgets/sound_action.dart';
 import 'package:alarm_app_animation/widgets/week_day.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,7 @@ class BottomContainer extends StatelessWidget {
               boxConstraints: boxConstraints,
               shouldInitAnimation: shouldInitAnimation,
             ),
+            SleepHistory(),
             PickMission(
               screenHeight: screenHeight,
               screenWidth: screenWidth,
