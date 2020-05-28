@@ -173,18 +173,6 @@ class WeekDayState extends State<WeekDay> with TickerProviderStateMixin {
             );
           },
         ),
-        GestureDetector(
-          onTap: () {
-            print('hapa');
-            _initDividerAnimation();
-            _initTransformScaleAnimation();
-          },
-          child: Container(
-            height: 100.0,
-            width: widget.boxConstraints.maxWidth,
-            color: Colors.green,
-          ),
-        ),
       ],
     );
   }

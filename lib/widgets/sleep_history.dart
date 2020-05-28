@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_echarts/flutter_echarts.dart';
 
 class SleepHistory extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      height: 250,
-      child: Echarts(
-        option: '''
+    
+
+    String optionString = '''
       {
         legend:{
           data:['Awake', 'Rem', 'Light', 'Deep']
@@ -53,7 +52,13 @@ class SleepHistory extends StatelessWidget {
           },
         ]
       }
-      ''',
+      ''';
+
+    return Container(
+      width: 300,
+      height: 250,
+      child: Echarts(
+        option: optionString,
       ),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:alarm_app_animation/widgets/flare_animation.dart';
 import 'package:alarm_app_animation/widgets/pick_mission.dart';
 import 'package:alarm_app_animation/widgets/sleep_history.dart';
 import 'package:alarm_app_animation/widgets/sound_action.dart';
@@ -42,6 +43,7 @@ class BottomContainer extends StatelessWidget {
               shouldInitAnimation: shouldInitAnimation,
             ),
             SoundAction(key:soundActionState,shouldInitAnimation: shouldInitAnimation,),
+            FlareAnimation(screenWidth: screenWidth,shouldInitAnimation: shouldInitAnimation,),
           ],
         );
       },
