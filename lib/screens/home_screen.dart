@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   double iconSize = 16.0;
   double horizontalMargin = 16.0;
   double marginTop = 50.0;
-  double marginTopContainer = 150.0;
+  double marginTopContainer = 100.0;
 
   double timerContainerHeight = 100;
   double timerContainerWidth = 80;
